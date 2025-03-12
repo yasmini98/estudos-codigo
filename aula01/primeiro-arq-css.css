@@ -1,0 +1,12 @@
+/* comentário do css */
+
+/*
+seletor {propriedade: valor;}
+*/
+
+body {background-color: bisque;}
+h1 {
+    color: blueviolet;
+    background-color: antiquewhite;
+    text-align: center;
+}
