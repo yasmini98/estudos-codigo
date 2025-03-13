@@ -1,0 +1,79 @@
+/*
+
+CSS = Cascading Style Sheets (Folhas de Estilo em Cascata)
+Baseado em hierarquias e heranças
+seletor (o que eu quero formatar) { propriedade: valor; (como eu quero formatar)}
+
+
+Tipos de seletores:
+tags (mais generalista e menos específico "força 1")
+.class (mais específico, mais controle, composição  "força 10")
+#id (muito mais específico e muito mais forte, praticamente exclusivo, não reaproveitável  "força 100")
+
+*/
+
+/* Tag */
+h2 {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+/* Class */
+.titulo {
+    color: blue;
+    text-transform: uppercase;
+    background-color:beige;
+    text-align: center;
+}
+
+.subtitulo {
+    color: orchid;
+    text-transform: lowercase;
+    background-color: beige;
+    text-align: left;
+}
+
+.destaque {
+    color: orangered;
+}
+
+.lista-nao-ordenada {
+    font-size: 40px;
+    color: hotpink;
+    background-color: beige;
+}
+
+/* ID */
+#primeiro {
+    color: teal;
+    font-size: 20px;
+}
+
+
+/* como funciona a especificidade 
+tag + id = 101
+tag + class = 11
+tag + tag = 2
+id + class = 110
+
+*/
+
+p#primeiro {
+    color: magenta;
+}
+
+.destaque#primeiro {
+    color: purple;
+}
+
+p.destaque#primeiro {
+    color: white;
+    background-color: magenta;
+}
+
+html body h2 {
+    color: palevioletred;
+}
