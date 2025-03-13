@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pasta overview.html</title>
+    <link rel="stylesheet" href="overview.css">
 </head>
 <body>
-    <h1>Overview do HTML 5</h1>
+    <h1 class="titulo">Overview do HTML 5</h1>
 
-    <h2>Textos</h2>
+    <h2 class="subtitulo">Textos</h2>
     <p><b> tag "b" tem o significado semantico para fonética em softwares de leitura (acessibilidade)</b> sit amet, consectetur <i>tag "i" tem a mesma função que a tag "b"</i> elit. Distinctio laborum similique commodi dolorum cum voluptates eum ipsam odit officiis, nisi ex sapiente deserunt. Fuga qui, reiciendis eveniet assumenda quidem odit!l</p>
 
     <p><strong> tag "strong" representa força, seriedade e importância para essa parte do texto</strong> sit amet consectetur adipisicing elit. <cite>a tag "cite" serve para mostrar uma citação dentro do texto</cite> sed ut illo dolores tempore minima impedit dolorum veritatis repudiandae voluptatem commodi facilis id, odio facere? Nesciunt minus distinctio quae incidunt.</p>
 
     <p><q> a tag "q" siginifica "quotes" que seriam nossas aspas</q><del>a tag "del" serve para mostrar que estou deletando parte do texto</del> <ins>e com a tag "ins" eu mostro por qual parte de texto eu quero substituir aquela parte deletada</ins> <em>tag "em" serve para mostrar ênfase em uma parte do texto</em> <mark>grau mais alto de importancia dentro de um texto, como o marca texto normal</mark> </p>
 
-    <h2>Listas</h2>
+    <h2 class="subtitulo">Listas</h2>
 
     <h3>Lista ordenada</h3>
     <p>exemplo de lista ordenada: passo a passo</p>
@@ -25,7 +26,7 @@
         <li>passo 3</li>
     </ol>
 
-    <h3>Lista não ordenada</h3>
+    <h3 id="lista-nao-ordenada">Lista não ordenada</h3>
     <p>exemplo de lista não ordenada: lista de compras</p>
     <ul>
         <li>ovos</li>
@@ -109,11 +110,43 @@
     <p>Link absoluto: <a href="https://www.google.com.br" target="_blank">Google</a></p>
     <p>Link para email: <a href="mailto:minidimensions@gmail.com">Me envie um email</a></p>
     <p>Link para download: <a href="arquivo-fantasia.pdf" download="arquivo-fantasia.pdf">Download de arquivo</a></p>
+    <p>Link cego: <a href="#">Ir para o topo da página</a> </p>
+    <p>Link âncora: <a href="#lista-nao-ordenada">Ir para lista não ordenada</a></p>
 
     <h2>Iframes</h2>
+    <p>Serve para integrar informações de outras páginas</p>
+    <iframe src="../aula01/arquivo-adicional1.html" frameborder="1"></iframe>
+    <iframe src="https://www.google.com.br" frameborder="1"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZHgyQGoeaB0?si=0PkzP4rwcljRogXV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58515.12830874654!2d-46.70977184672584!3d-23.56142037631009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ceb1eb771f%3A0xe904f6a669744da1!2sMuseu%20de%20Arte%20de%20S%C3%A3o%20Paulo%20Assis%20Chateaubriand!5e0!3m2!1spt-BR!2sbr!4v1741882125630!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h2>Vídeo</h2>
+    <video src="video-nativo.mp4" controls autoplay preload="auto" muted loop poster="http://lorempixel.com.br/250/150/?1"></video>
+    
 
     <h2>Formulários</h2>
-    
+    <p>Elo entre o usuário final e os sites</p>
+    <form action="recebendo-formulario.py">
+        <fieldset>
+            <legend>Fale conosco</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="nome">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="email">
+            <br>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="telefone">
+            <br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            <br>
+            <input type="checkbox"> Aceito os termos de uso
+            <br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
     
     
     
