@@ -44,7 +44,7 @@ body {
     .header .menu li a{
         text-decoration: none;
         color: inherit; /* inherit é herdar essa configuração do elemento "pai" */
-        display: block;
+        display: block; /*ou poderia usar o inherit*/
     }
 
 .footer {
