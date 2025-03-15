@@ -1,3 +1,13 @@
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
 .site-conteiner {
     background-color: #ffffff;
     border: 2px solid rgb(255, 192, 203);
@@ -12,6 +22,30 @@
     background-color: pink;
     overflow: hidden;
 }
+    .header .menu{
+        /*border: solid 4px red;*/
+    }
+    .header .menu li{
+        /*border: solid 2px black;*/
+        background-color: plum;
+        display: block;
+        float: left;
+        width: 200px;
+        text-align: center;
+        line-height: 32px;
+        color: purple;
+    }
+
+    .header .menu li:hover { /* :hover é um pseudo-classe que é ativado quando o mouse passa por cima do elemento */
+        background-color: rgb(255, 242, 244);
+
+    }
+
+    .header .menu li a{
+        text-decoration: none;
+        color: inherit; /* inherit é herdar essa configuração do elemento "pai" */
+        display: block;
+    }
 
 .footer {
     height: 90px;
