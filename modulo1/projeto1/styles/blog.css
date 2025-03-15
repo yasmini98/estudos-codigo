@@ -10,34 +10,43 @@ body {
 
 .site-conteiner {
     background-color: #ffffff;
-    border: 2px solid rgb(255, 192, 203);
+    /*border: 2px solid rgb(255, 192, 203);*/
     width: 75rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 .header {
-    height: auto;
+    /*height: auto;*/
     font-weight: bolder;
-    background-color: pink;
+    background-color: white;
     overflow: hidden;
 }
-    .header .menu{
-        /*border: solid 4px red;*/
+
+    .header .logo a {
+        /*background-color: royalblue;*/
+        display: block;
+        background-image: url(../images/fbr-ford-logo-header-footer.avif);
+        background-repeat: no-repeat;
+        background-position: 1rem 1.3rem;
+        width: 300px;
+        height: 150px;
+        text-indent: -5000px;
     }
+
     .header .menu li{
         /*border: solid 2px black;*/
-        background-color: plum;
+        background-color: rgb(0, 0, 130);
         display: block;
         float: left;
         width: 200px;
         text-align: center;
         line-height: 32px;
-        color: purple;
+        color: white;
     }
 
     .header .menu li:hover { /* :hover é um pseudo-classe que é ativado quando o mouse passa por cima do elemento */
-        background-color: rgb(255, 242, 244);
+        background-color: rgb(73, 76, 255);
 
     }
 
@@ -47,14 +56,37 @@ body {
         display: block; /*ou poderia usar o inherit*/
     }
 
+.main {
+    height: auto;
+    font-weight:normal;
+    background-color: rgba(211, 211, 211, 0.856);
+}
+
+
+/*usarei a metodologia BEM nessa parte do highlight*/
+.highlight {
+    position: relative;
+}
+    .highlight__image{
+        display: block;
+    }
+
+    .highlight__title{
+        font-size: 3em;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        text-transform: uppercase;
+        font-style: italic;
+        position: absolute;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        padding: 10px 15px 10px 15px; /*top, right, bottom, left*/
+    }
+
+
 .footer {
     height: 90px;
     font-weight: bold;
-    background-color: rgb(255, 192, 203);
+    background-color: rgb(173, 170, 186);
 }
 
-.main {
-    height: 300px;
-    font-weight:normal;
-    background-color: rgb(255, 242, 244);
-}
