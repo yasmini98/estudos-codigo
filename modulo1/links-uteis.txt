@@ -1,0 +1,10 @@
+https://htmlreference.io/
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element
+https://devdocs.io/
+https://css-tricks.com/snippets/css/clear-fix/
+https://docs.emmet.io/abbreviations/syntax/
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+https://www.w3schools.com/html/html_entities.asp
+https://flukeout.github.io/
+https://flexboxfroggy.com/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
