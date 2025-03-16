@@ -1,0 +1,37 @@
+body{
+    font: 100%/1.5 arial; /* essa parte depois do 100% mostra o tamanho da linha*/
+}
+
+.container{
+    margin: auto;
+    border: 2px black solid;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    flex-flow: row wrap; /*é a junção do flex-direction e do flex-wrap*/
+    align-items: stretch; /*flex-start, flex-end, center, stretch, baseline*/
+}
+
+.item{
+    border: 1px solid red;
+    background-color:cadetblue;
+    padding: 1em;
+    /*flex-basis: 166px; /*tamanho do item*/
+    flex-grow: 1;
+}
+
+.item:nth-child(even){ /*dentro do parenteses "odd" vai selecionar os elementos filho ímpares, e "even" os pares*/
+    background-color: aqua;
+    /*align-self: center; /*flex-start, flex-end, center, stretch, baseline*/
+}
+
+.item:nth-child(odd){ /*dentro do parenteses "odd" vai selecionar os elementos filho ímpares, e "even" os pares*/
+    /*align-self: center;*/
+}
+.item:nth-child(4){ /*modifica apena o item 4*/
+    /*align-self: center;*/
+    background-color: yellow;
+    /*-1, 0, 1*/
+    order: 0;
+    flex-basis: 100px;
+}

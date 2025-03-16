@@ -1,0 +1,15 @@
+.site {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header, footer {
+    background-color: blueviolet;
+    min-height: 150px;
+}
+
+main {
+    background-color: lightblue;
+    min-height: 700px;
+}
