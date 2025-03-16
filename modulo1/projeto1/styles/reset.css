@@ -60,3 +60,10 @@ table {
   * html .clearfix { height: 1%; }
   .clearfix { display: block; }
   /* close commented backslash hack */
+
+  html {
+	box-sizing: border-box;
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }

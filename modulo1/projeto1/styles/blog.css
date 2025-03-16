@@ -59,7 +59,7 @@ body {
 .main {
     height: auto;
     font-weight:normal;
-    background-color: rgba(211, 211, 211, 0.856);
+    background-color: rgba(f,f,f,0.8);
 }
 
 
@@ -83,10 +83,98 @@ body {
         padding: 10px 15px 10px 15px; /*top, right, bottom, left*/
     }
 
+.section-wrapper {
+    min-height: 400px;
+}
+
+    section[role=content] {  /*seletor de atributo*/
+    width: 75%;
+    float: left;
+    min-height: inherit; ;
+    }
+        .post {
+            margin: 1rem;
+            padding: 1rem;
+            /*background-color: white;
+            border-radius: 10px;*/
+            
+        }
+            .post__title {
+                font-size: 2em;
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+                padding-bottom: 8px;
+            }
+            .post description {
+                font-size: 1.2em;
+                color: rgb(0, 0, 0);
+            }
+
+    section[role=sidebar] {
+        background-color: rgba(211, 211, 211, 0.856);
+        width: 25%;
+        float: right;
+        min-height: inherit;
+    }
+
+        section[role=sidebar] li {
+            line-height: 2.5em;
+        }
+
+        section[role=sidebar] li a {
+            text-decoration: none;
+            color: rgb(88, 88, 240);
+            padding-left: 1em;
+        }
+
+        section[role=sidebar] li a:hover {
+            text-decoration: underline;
+            color: rgb(0, 0, 130);
+            padding-left: 1em;
+        }
+
 
 .footer {
-    height: 90px;
-    font-weight: bold;
-    background-color: rgb(173, 170, 186);
+    height: auto;
+    font-weight:lighter;
+    background-color: rgb(0, 0, 0);
+    padding: 2rem;
+    color: rgb(255,255,255,0.8);
 }
+
+    .footer a {
+        width: 35px;
+        height: 35px;
+        display: block;
+        text-indent: -9000px;
+        background-image: url(../images/social_icons.avif);
+        background-size: 1900%;
+        border-radius: 5px;
+        float: right;
+        margin-left: 1rem;
+    }
+
+    .social__x {
+        background-position: -16px -68px;
+    }
+    .social__x:hover {
+        background-position: -16px -188px;
+    }
+    .social__insta {
+        background-position: -66px -68px;
+    }
+    .social__insta:hover {
+        background-position: -66px -188px;
+    }
+    .social__yt {
+        background-position: -165px -68px;
+    }
+    .social__yt:hover {
+        background-position: -165px -188px;
+    }
+
+    .copyright {
+        float: left;
+        line-height: 35px;
+    }
 
