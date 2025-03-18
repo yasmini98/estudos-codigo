@@ -8,3 +8,4 @@ https://www.w3schools.com/html/html_entities.asp
 https://flukeout.github.io/
 https://flexboxfroggy.com/
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
