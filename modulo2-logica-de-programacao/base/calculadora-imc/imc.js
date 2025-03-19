@@ -1,6 +1,7 @@
 function imc(){
     const peso = document.getElementById('peso').value; //pega valor de peso
     const altura = document.getElementById('altura').value; //pega valor de altura
+<<<<<<< HEAD
     const resultado = document.getElementById('resultado'); //pega valor de resultado no html
     const imc = parseFloat(peso / (altura * altura)); //calcula o imc
     resultado.value = imc.toFixed(2); //exibe o resultado no html do imc com 2 casas decimais
@@ -40,3 +41,9 @@ true || false -> true
 true || true -> true
 
 */
+=======
+    const resultado = document.getElementById('resultado'); //pega valor de resultado
+    const imc = peso / (altura * altura); //calcula o imc
+    resultado.value = imc.toFixed(2); //exibe o resultado do imc com 2 casas decimais
+}
+>>>>>>> 840037239b8b5253528d834e7633554e455fc70a
