@@ -38,11 +38,12 @@ function converteDolarParaReal(dolar=0,cotacao=1){
 function converter() {
     const funcionario = document.getElementById("funcionario").value;
     const salario = document.getElementById("salario").value;
+    const cotacao = document.getElementById("cotacao").value;
 
     console.log(funcionario);
     console.log(salario);
     
     document.getElementById("fulano").textContent = converterParaMaiuscula(funcionario);
     document.getElementById("reais").textContent = converteDolarParaReal(parseFloat(salario));
-    document.getElementById("dolar").textContent = converteParaDolar(parseFloat(salario), 5.3);
+    document.getElementById("dolar").textContent = converteParaDolar(parseFloat(salario), cotacao);
 }
