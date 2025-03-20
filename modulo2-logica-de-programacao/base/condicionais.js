@@ -25,20 +25,27 @@ if(idade>=18){
     console.log("você é adolescente");
 } 
 */
-const idade = document.getElementById("idade").value;
-console.log(idade);
-let classificacao = "idade indefinida";
 
-if(idade>=18){
-    console.log("você é adulto");
-    classificacao = "adulto";
-}else if(idade<13){
-    console.log("você é criança");
-    classificacao = "criança";
-}else{
-    console.log("você é adolescente");
-    classificacao = "adolescente";
-} 
+function calcularFaixaEtaria() {
+    const idade = document.getElementById("idade").value;
+    console.log(idade);
+    let faixa = "";
+
+    if(idade>=18){
+        console.log("você é adulto");
+        faixa = "adulto";
+    }else if(idade<13 && idade>=0){
+        console.log("você é criança");
+        faixa = "criança";
+    }else if(idade<0){
+        faixa = "idade inválida";
+    }else{
+        console.log("você é adolescente");
+        faixa = "adolescente";
+    }
+    document.getElementById("faixa").value = faixa; 
+}
+
 
 // ======SWITCH======
 
@@ -50,7 +57,7 @@ if(idade>=18){
     default:
         break;
 } */
-
+/* 
 const mes = parseInt(prompt("mes"));
 console.log(typeof mes, mes);
 switch (mes) {
@@ -70,4 +77,4 @@ switch (mes) {
     default:
         console.log("ainda não ordenei esse mês no switch");
         break;
-}
+} */
