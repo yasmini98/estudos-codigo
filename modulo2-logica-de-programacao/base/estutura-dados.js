@@ -67,9 +67,55 @@ function pegaFruta(fruta, index) {
 
 frutas.forEach(pegaFruta);
 
+document.write("<br>");
+let nomes = ["Aroldo", "João", "Maria", "Pedro", "Osvaldo"];
+console.log(nomes);
 
-/* 
-document.write(carros[0], "<br>");
-document.write(carros[1], "<br>");
-document.write(carros[2], "<br>"); 
-*/
+nomes.forEach(function(nome, index, lista) {
+    console.log("executou?", arguments); // "arguments" é usando para saber quais são os parâmetros usados.
+    document.write(index, " ", nome, "<br>");
+    console.log(lista[index]);
+});
+
+// é questão de boa prática usaruma função anônima quando se quer usar essa função apenas uma vez
+
+document.write("<hr>");
+
+let numeros = [18, 23, 11, 14, 17, 4, 79, 3];
+console.log(
+    numeros.forEach(function(num) {
+        document.write(num, "<br>");
+        return num;
+    })
+);
+
+
+let filtrados = numeros.filter(function(num) {
+    return num < 15 && num > 10;
+});
+
+
+console.log(numeros);
+console.log(filtrados);
+
+let dobro = numeros.map(function(num) {
+        return num * 2;
+    })
+
+console.log(dobro);
+console.log(numeros);
+
+console.warn(
+
+    numeros
+    .filter(function(num){
+        return num >15;
+    })
+    .map(function (num) {
+        return num * 5;
+    })
+    .sort(function (a, b) {
+        return a - b;
+    })
+    .reverse()
+)

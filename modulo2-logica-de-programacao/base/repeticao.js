@@ -72,7 +72,6 @@ while(noventa>=um){
     noventa = noventa-2;
 }
 
-<<<<<<< HEAD
 document.write("<hr><h1>5 asteriscos em 3 linhas</h1>");
 
 for(let linhas=0; linhas<3; linhas++){
@@ -90,11 +89,3 @@ for(let linhass=0; linhass<=10; linhass++){
     }
     document.write("<br>");
 }
-=======
-/* 
-exercício: fazer exercicios usando repetição para imprimir isso na tela:
-*****
-*****
-*****
- */
->>>>>>> 894e34e9d7281a71190cc582f7ba539ad110de75
