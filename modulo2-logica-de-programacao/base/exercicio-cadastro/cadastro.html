@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+
+    <label for="">Nome:</label>
+    <input type="text" id="nome">
+    <br><br>
+    <label for="">Preço:</label>
+    <input type="number" placeholder="0,00" id="preco">
+    <br><br>
+    <label for="">Quantidade:</label>
+    <input type="number" placeholder="0" id="qtde">
+    <br><br>
+    <button onclick="cadastrar()">Cadastrar</button>
+
+    <hr>
+
+    <h2>Produtos Cadastrados</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>CÓDIGO</th>
+                <th>NOME</th>
+                <th>PREÇO</th>
+                <th>QUANTIDADE</th>
+            </tr>
+        </thead>
+        <tbody id="produtos">
+            <tr>
+                <td colspan="4">Não existem produtos cadastrados!</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <script src="cadastro.js"></script>
+</body>
+</html>
