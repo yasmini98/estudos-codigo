@@ -47,7 +47,7 @@ console.log(
 var strHead = "CPF|DATA|NOM-TIt|DAT_ANVR_TIT|NOM_MAE|NUM_DDD_TEL_CEL|NUM_TEL_CEL|NUM_DDD_TEL_FIX|NUM_TEL_FIX|NOM_LOGR|NOM_LOGR|NOM_CPL_LOGR|NUM_CEP_LOGR|NOM_BRR_ENDR|NOM_MUN_ENDR|UF_ENDR|NOM_END_EMAIL|CANAL|MOTIVO_RECUSA|STATUS";
 console.log(strHead, strHead.constructor);
 
-var splitStr = strHead.split("|"); // para quebrar o string pelo "|"
+/* var splitStr = strHead.split("|"); // para quebrar o string pelo "|"
 //para formatar os elementos para camelCase
 var camelCaseStr = splitStr.map(function(item,index){
     return item
@@ -56,13 +56,21 @@ var camelCaseStr = splitStr.map(function(item,index){
     .replace(/(^|\s)([a-z])/g, function(g) { return g.toUpperCase(); }); //torna a primeira letra maiúscula
 });
 
-console.log(camelCaseStr);
+console.log(camelCaseStr); */
 
-// output
-['cpf', 'data', 'nomTit', 'datAnvrTit', 'NomMae', 'NumDddTelCel', 'NumTelCel', 'NumDddTelFix', 'NumTelFix', 'NomLogr', 'NomLogr', 'NomCplLogr', 'NumCepLogr', 'NomBrrEndr', 'NomMunEndr', 'UfEndr', 'NomEndEmail', 'canal', 'MotivoRecusa', 'Status']
+console.log(
+    strHead.split("|").map((field) =>{
+        return field.toLowerCase().split("_").map((desc, i) => {
+            /* if(i==0){
+                return desc;
+            }else{
+                return desc.charAt(0).toUpperCase()+desc.slice(1);
+            } */
+           return (i==0) ? desc : desc.charAt(0).toUpperCase() + desc.slice(1);
+        }).join("");
+    })
+)
 
-document.write("<hr>");
-function pegaFruta(fruta, index) {
-    console.log(arguments);
-    document.write((fruta), "<br>");
-}
+// Ternário
+
+//(condicao_logica) ? valor_verdadeiro : valor_falso;
